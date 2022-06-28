@@ -1,6 +1,3 @@
-
-
-
 def checkPossibility(nums):
     # checks if current-idx is higetr than next-idx
     counter= 0
