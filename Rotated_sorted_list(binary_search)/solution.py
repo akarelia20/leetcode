@@ -2,6 +2,9 @@
 # Output: 1
 # Explanation: The original array was [1,2,3,4,5] rotated 3 times.
 
+# Runtime: 64 ms, faster than 44.15% of Python3 online submissions for Find Minimum in Rotated Sorted Array.
+# Memory Usage: 14.4 MB, less than 23.07% of Python3 online submissions for Find Minimum in Rotated Sorted Array.
+
 # ==========================================================================================================
 # 1. define hi and low indeces to keep track of the search size, at the beginning hi is len(arr)-1 and low is 0
 # 2. set the mid point which is arr_length//2
@@ -30,17 +33,7 @@ def find_min(nums):
             elif nums[len(nums)-1] > mid_num:
                 hi = mid-1 # left side (beginning of the arr)
     return mid_num
-    # while low <= hi:
-    #     mid = (low+hi)//2
-    #     mid_num = nums[mid]
-    #     print(low, hi, mid, mid_num)
-    #     if mid > 0 and (mid_num < nums[mid-1] and mid_num < nums[mid+1]):
-    #         return mid_num
-    #     elif nums[len(nums)-1]<  mid_num:
-    #         low = mid+1 # right side(end of the arr)
-    #     elif nums[len(nums)-1] > mid_num:
-    #         hi = mid-1 # left side (beginning of the arr)
-    # return mid_num
 
 print(find_min([3,1,2]))
+
 
