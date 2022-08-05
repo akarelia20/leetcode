@@ -11,10 +11,8 @@ def palindrome(x):
         x = x//10
         print(x)
         print(result)
-        
     if (x == result or x == result//10):
         return True
     else:
         return False
-   
 print(palindrome(10))
