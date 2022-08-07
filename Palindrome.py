@@ -1,5 +1,5 @@
 #  check if the number is palindrome.
-#  this slution only itrates through have of the length of the given number.
+#  this sloution only itrates through have of the length of the given number.
 
 
 def palindrome(x):
@@ -15,4 +15,4 @@ def palindrome(x):
         return True
     else:
         return False
-print(palindrome(10))
+print(palindrome(557))
