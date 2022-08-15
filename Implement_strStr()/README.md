@@ -19,6 +19,6 @@ Example 2:
 Output: -1
 
 
-### time and space compalexity
-- Runtime: 55 ms, faster than 30.25% of Python3 online submissions for Implement strStr().
+### time and space complexity
+- Runtime: 49 ms, faster than 47.76% of Python3 online submissions for Implement strStr().
 - Memory Usage: 14 MB, less than 15.38% of Python3 online submissions for Implement strStr().
