@@ -21,5 +21,9 @@ Explanation: 10/3 = 3.33333.. which is truncated to 3.
 Input: dividend = 7, divisor = -3
 Output: -2
 Explanation: 7/-3 = -2.33333.. which is truncated to -2.
+
+### link to leetcode
+
+https://leetcode.com/problems/divide-two-integers/
  
 
