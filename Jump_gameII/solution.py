@@ -7,7 +7,6 @@ def jump(nums):
     while right < len(nums) - 1:
         jump_count += 1
         next = max(i + nums[i] for i in range(left, right + 1))
-        print(next)
         left, right = right, next
     return jump_count
 
