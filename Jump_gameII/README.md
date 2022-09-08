@@ -1,3 +1,8 @@
+### Runtime 
+- Runtime: 168 ms, faster than 80.27% of Python3 online submissions for Jump Game II.
+- Memory Usage: 15 MB, less than 59.07% of Python3 online submissions for Jump Game II.
+
+
 - Given an array of non-negative integers nums, you are initially positioned at the first index of the array.
 - Each element in the array represents your maximum jump length at that position.
 
