@@ -19,5 +19,11 @@ def climbStarirs(n):
         OneStep_down = possible_ways
     return possible_ways
 
+# uses less space and more optimal solution
+def climbStairs2(n):
+    x,y = 1,0
+    for i in range(n):
+        x,y = x+y, x
+    return x
 
 print(climbStarirs(5))
