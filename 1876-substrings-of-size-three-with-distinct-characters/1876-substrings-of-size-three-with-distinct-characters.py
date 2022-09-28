@@ -1,5 +1,5 @@
 class Solution:
-    # from collections import deque
+    from collections import deque
     def countGoodSubstrings(self, s: str) -> int:
         count= 0
         queue = deque(list(s))
