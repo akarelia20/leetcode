@@ -21,5 +21,6 @@ class Solution:
                 j-=1
             k-=1
         print(nums1)
+        # add the remaining array at the begingig of nums1
         if j>=0:
             nums1[:k+1]=nums2[:j+1]
