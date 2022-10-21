@@ -21,5 +21,3 @@ class Solution:
             outer= self.isMirror(left.left, right.right)
             inner= self.isMirror(left.right, right.left)
             return outer and inner
-        else:
-            return False
