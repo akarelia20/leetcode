@@ -9,17 +9,11 @@ class Solution:
         if root is None:
             return 0
         
-        queue = collections.deque()
-        queue.append((root,1))
+        if root.right == None and root.left == None:
+            return 1
+        if root.right and not root.left:
+            return 1+(self.minDepth(root.right))
+        if root.left and not root.right:
+            return 1+(self.minDepth(root.left))
         
-        while queue:
-            node, depth = queue.popleft()
-            
-            if node.left == None and node.right == None:
-                return depth
-            
-            if node.left:
-                queue.append((node.left, depth+1))
-            
-            if node.right:
-                queue.append((node.right, depth+1))
+        return 1+min(self.minDepth(root.right), self.minDepth(root.left))
