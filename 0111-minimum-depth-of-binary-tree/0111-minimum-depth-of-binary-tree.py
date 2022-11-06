@@ -15,13 +15,14 @@ class Solution:
         while queue:
             node, depth = queue.popleft()
             
-            if node.right == None and node.left== None:
+            if node.left == None and node.right == None:
                 return depth
-            if node.right:
-                queue.append((node.right, depth+1))
+            
             if node.left:
                 queue.append((node.left, depth+1))
-                
+            
+            if node.right:
+                queue.append((node.right, depth+1))
 # def minDepthDFS(self, root: Optional[TreeNode]) -> int:
 #         if root is None:
 #             return 0
