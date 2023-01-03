@@ -1,6 +1,6 @@
 class Solution:
     def lengthOfLongestSubstring(self, str: str) -> int:
-#         stores letter and pos
+#       stores letter and pos
         dict = {} 
         subStr_len= 0
 #       tracks the starting index of substring
