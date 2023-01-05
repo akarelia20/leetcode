@@ -10,6 +10,6 @@ class Solution:
             if str[j] in dict:
                 i = max(dict[str[j]], i)
             dict[str[j]]= j+1
-            subStr_len= max(subStr_len, (j+1)-i)
+            subStr_len= max(subStr_len, j-i+1)
         return subStr_len
         
