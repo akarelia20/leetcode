@@ -9,11 +9,9 @@ class Solution:
             else:
                 result.append(result[i-1] * nums[i-1]) 
         
-        
         for j in range(len(nums)-1,-1,-1):
                 result[j]= result[j]*x
                 x = x*nums[j]
-           
-        return (result)
+        return result
        
         
