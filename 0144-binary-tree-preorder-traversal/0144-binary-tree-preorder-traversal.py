@@ -9,9 +9,9 @@ class Solution:
         res = []
         stack= [root]
         while stack:
-            root = stack.pop()
-            if root:
-                res.append(root.val)
-                stack.append(root.right)
-                stack.append(root.left)
+            node= stack.pop()
+            if node:
+                res.append(node.val)
+                stack.append(node.right)
+                stack.append(node.left)
         return res
